@@ -1,0 +1,22 @@
+<div id="contact_div">
+  <div id="form_div">
+      <label>Role:</label>
+      <input [(ngModel)]="vaishu.role"><br>
+      <label>Designation:</label>
+      <input [(ngModel)]="vaishu.designation">
+      <br>
+      <label>COURSE:</label>
+      <select (change)="ngOnInit()" name="course">
+        <option *ngFor="let i of course">{{i}}</option>
+      </select><br>
+      <span>{{course|slice:0:6}}</span><br>
+      <span>{{454.78784814 | number: '2.4-4'}}</span><br>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>UserName</th>
+        </tr>
+      </table>
+  </div>
+</div>

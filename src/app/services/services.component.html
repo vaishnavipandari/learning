@@ -1,0 +1,16 @@
+<div class="services_div">
+  <span>ID: {{id}}</span><br>
+  <span>NAME: {{name | lowercase}}</span><b>// Lowercase pipe</b><br>
+  <span>MARK1: {{mark1 | currency}}</span><br>
+  <span>MARK2: {{mark2}}</span><br>
+  <span>MARK3: {{mark3}}</span><br>
+  <span>TOTAL: {{total}}</span><br>
+  <span>Average: {{avg}}</span><br>
+  <span>Percentage: {{0.5678 | percent }}</span><b>  // Percent pipe</b><br>
+  <span>{{todaydate | date:'d/M/y'}}</span><b> // Date pipe</b><br>
+  <span>{{todaydate | date:'shortTime'}}</span><b> // Date pipe</b><br>
+  <span>{{fees | currency}}</span><b> // Currency pipe</b><br>
+  <span>{{info | json}}</span><b> // Json pipe</b><br>
+  <span>{{6 | sqrt}}</span><b> // Sqrt pipe</b><br>
+  <span>{{name| json}}</span>
+</div>

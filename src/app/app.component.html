@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+<div>
+    <span appChangeText>welcome</span>
+    <button (click)='getData()'>click me</button>
+    <table>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>E-Mail</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
+            <tr *ngFor='let user of data$ | async'>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+                <td>{{ user.website }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
